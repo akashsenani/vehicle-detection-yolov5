@@ -1,35 +1,36 @@
-# 🚗 Vehicle Detection Using YOLOv5
+# 🚗 Vehicle Detection using YOLOv5
 
-This project implements a real-time vehicle detection system using the YOLOv5 deep learning framework. It trains a custom object detection model on annotated vehicle images and evaluates its performance using precision-recall curves, F1 scores, and confusion matrices.
-
----
-
-## 🔍 Key Features
-
-- Custom YOLOv5 training on vehicle dataset
-- High-accuracy real-time detection
-- Evaluation metrics: Precision, Recall, F1, mAP
-- Visualizations: PR curves, Confusion Matrix, Label distribution
-- Simple inference script for testing on custom images
-- Organized repository for reproducibility and collaboration
+This project presents a real-time **Vehicle Detection System** built using the YOLOv5 object detection framework. The system is trained on a custom dataset of traffic images and aims to accurately detect and localize vehicles such as cars, bikes, buses, and trucks in diverse environments.
 
 ---
 
-## 📁 Repository Structure
+## 📌 Description
 
-```
+Vehicle detection plays a crucial role in intelligent traffic systems, surveillance, autonomous driving, and parking management. Traditional detection algorithms often struggle with dynamic road conditions, variable lighting, and occlusions.
 
-vehicle-detection-yolov5/
-├── weights/              # Trained YOLOv5 model (best.pt)
-├── data/                 # Data configuration (data.yaml)
-├── images/               # Visualizations and dataset previews
-├── inference/            # Inference script and test image
-├── utils/                # Optional helper scripts
-├── README.md             # Project overview and instructions
-└── requirements.txt      # Required Python libraries
+In this project, we fine-tuned the YOLOv5 model on a custom dataset tailored for traffic scenarios. By leveraging YOLOv5’s speed and accuracy, the model delivers real-time object detection performance with high precision and recall.
 
-````
+---
 
+## 🎯 Key Features
+
+- Custom-trained YOLOv5 model for vehicle detection
+- Real-time inference capability
+- Supports detection of multiple vehicle types
+- Evaluated using precision-recall curves and confusion matrices
+- Visual samples for dataset labeling and training batches
+
+---
+
+## 🚀 Applications
+
+- **Smart Traffic Monitoring**: Detect and count vehicles to analyze congestion.
+- **Parking Lot Management**: Detect vacant and occupied spots.
+- **Surveillance**: Enhance security through vehicle activity analysis.
+- **Autonomous Driving**: Act as a perception module for identifying nearby vehicles.
+- **Toll Booth Automation**: Automate detection and classification of vehicles at toll stations.
+
+---
 ---
 
 ## 📊 Results and Visualizations
@@ -53,29 +54,5 @@ vehicle-detection-yolov5/
 | ![Labels](images/labels.jpg) | ![Train](images/train_batch0.jpg) | ![Val](images/val_batch0_labels.jpg) |
 
 ---
-
-## 📦 Model Weights
-
-Trained YOLOv5 weights are included under:
-
-```
-weights/best.pt
-```
-
----
-
-## 📌 Requirements
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## 🤝 Contribution
-
-Pull requests are welcome. For major changes, open an issue first to discuss what you would like to change.
 
 ---
